@@ -7,6 +7,7 @@ const CTA = () => {
   };
 
   return (
+
     <section className="bg-gradient-to-br from-primary via-primary to-accent text-white" aria-labelledby="cta-heading">
       <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
         <h2 id="cta-heading" className="text-3xl font-extrabold sm:text-4xl">

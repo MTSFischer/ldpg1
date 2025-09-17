@@ -8,6 +8,7 @@ const benefits = [
 ];
 
 const Benefits = () => (
+
   <section className="bg-white" aria-labelledby="benefits-heading">
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
@@ -18,6 +19,7 @@ const Benefits = () => (
           Tudo o que você precisa para lucrar com IA, sem complicação
         </h2>
         <p className="mt-3 text-lg text-slate-600">
+
           Economia de tempo, clareza nas ações e ferramentas para colocar dinheiro no bolso já nos primeiros dias.
         </p>
       </div>
@@ -25,11 +27,13 @@ const Benefits = () => (
         {benefits.map((benefit) => (
           <div key={benefit} className="flex items-start gap-4 rounded-2xl border border-slate-100 bg-slate-50/60 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </span>
             <p className="text-base font-semibold text-slate-700">{benefit}</p>
+
           </div>
         ))}
       </div>

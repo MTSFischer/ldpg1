@@ -56,7 +56,6 @@ const Countdown = ({ size = 'base', label = 'Tempo restante da oferta', classNam
       role="timer"
       aria-live="polite"
       aria-label={label}
-    >
       <span className="inline-flex items-center gap-2 rounded-full bg-primary/90 px-4 py-2 text-white shadow-glow">
         <span className="text-xs font-semibold uppercase tracking-wide text-white/80">Oferta relâmpago</span>
         {ended ? (

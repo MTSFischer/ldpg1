@@ -14,7 +14,9 @@ import TrustBadges from './components/TrustBadges.jsx';
 
 const App = () => (
   <CountdownProvider>
+codex/generate-responsive-landing-page-for-e-book-vjatoi
     <div className="min-h-screen bg-slate-50">
+main
       <Header />
       <main>
         {/* Placeholder para integração de analytics (GA4, Meta Pixel, etc.) */}
