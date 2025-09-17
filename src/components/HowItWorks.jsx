@@ -26,10 +26,10 @@ const modules = [
 ];
 
 const HowItWorks = () => (
-  <section id="conteudo" className="bg-[#060b1d] text-slate-100" aria-labelledby="content-heading">
+  <section id="conteudo" className="bg-slate-900 text-slate-100" aria-labelledby="content-heading">
     <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="mb-12 text-center">
-        <span className="inline-block rounded-full bg-accent/30 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+        <span className="inline-block rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
           Conteúdo do e-book
         </span>
         <h2 id="content-heading" className="mt-4 text-3xl font-bold text-white sm:text-4xl">
@@ -41,9 +41,9 @@ const HowItWorks = () => (
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {modules.map((module) => (
-          <article key={module.title} className="rounded-3xl border border-white/10 bg-surface/80 p-6 backdrop-blur">
+          <article key={module.title} className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
             <h3 className="text-xl font-semibold text-white">{module.title}</h3>
-            <p className="mt-3 text-sm text-slate-300">{module.description}</p>
+            <p className="mt-3 text-sm text-slate-200">{module.description}</p>
           </article>
         ))}
       </div>

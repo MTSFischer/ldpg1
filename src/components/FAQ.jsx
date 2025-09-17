@@ -39,13 +39,13 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="bg-black/90 text-slate-100" aria-labelledby="faq-heading">
+    <section id="faq" className="bg-white" aria-labelledby="faq-heading">
       <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
-          <span className="inline-block rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
             Dúvidas frequentes
           </span>
-          <h2 id="faq-heading" className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+          <h2 id="faq-heading" className="mt-4 text-3xl font-bold text-dark sm:text-4xl">
             Tudo o que você precisa saber antes de garantir o seu acesso
           </h2>
         </div>
@@ -56,11 +56,11 @@ const FAQ = () => {
             const buttonId = `faq-button-${index}`;
 
             return (
-              <div key={faq.question} className="rounded-2xl border border-white/10 bg-surface/80 p-4">
+              <div key={faq.question} className="rounded-2xl border border-slate-100 bg-slate-50/60 p-4">
                 <button
                   id={buttonId}
                   type="button"
-                  className="flex w-full items-center justify-between gap-4 text-left text-base font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="flex w-full items-center justify-between gap-4 text-left text-base font-semibold text-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   aria-expanded={isOpen}
                   aria-controls={contentId}
                   onClick={() => toggleItem(index)}
@@ -74,7 +74,7 @@ const FAQ = () => {
                   id={contentId}
                   role="region"
                   aria-labelledby={buttonId}
-                  className={`mt-3 text-sm text-slate-300 transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 overflow-hidden opacity-0'}`}
+                  className={`mt-3 text-sm text-slate-600 transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 overflow-hidden opacity-0'}`}
                 >
                   <p className="pr-6">{faq.answer}</p>
                 </div>

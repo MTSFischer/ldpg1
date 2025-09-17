@@ -16,12 +16,12 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-black/70 backdrop-blur">
+    <header className="sticky top-0 z-40 bg-slate-50/90 backdrop-blur shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#hero" className="text-lg font-extrabold text-white">
+        <a href="#hero" className="text-lg font-extrabold text-dark">
           Renda Extra IA
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-200 lg:flex" aria-label="Navegação principal">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex" aria-label="Navegação principal">
           {menuItems.map((item) => (
             <a key={item.href} href={item.href} className="transition hover:text-primary">
               {item.label}
@@ -32,14 +32,14 @@ const Header = () => {
           <button
             type="button"
             onClick={handleRedirect}
-            className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-dark shadow-lg transition hover:scale-[1.02] hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-[1.02] hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Comprar agora
           </button>
         </div>
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-slate-100 transition hover:border-primary hover:text-primary lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-primary hover:text-primary lg:hidden"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -56,12 +56,12 @@ const Header = () => {
       </div>
       {isMenuOpen && (
         <div id="mobile-menu" className="lg:hidden">
-          <nav className="space-y-2 border-t border-white/10 bg-surface/90 px-4 py-4 text-sm font-semibold text-slate-100" aria-label="Menu móvel">
+          <nav className="space-y-2 border-t border-slate-200 px-4 py-4 text-sm font-semibold" aria-label="Menu móvel">
             {menuItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block rounded-full px-4 py-2 text-slate-100 transition hover:bg-primary/20"
+                className="block rounded-full px-4 py-2 text-slate-700 transition hover:bg-primary/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
@@ -70,7 +70,7 @@ const Header = () => {
             <button
               type="button"
               onClick={handleRedirect}
-              className="mt-3 w-full rounded-full bg-primary px-6 py-3 text-sm font-semibold text-dark shadow-lg transition hover:scale-[1.02] hover:bg-primary/90"
+              className="mt-3 w-full rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-[1.02] hover:bg-primary/90"
             >
               Comprar agora
             </button>

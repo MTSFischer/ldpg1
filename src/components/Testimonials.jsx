@@ -24,10 +24,10 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <section id="depoimentos" className="bg-[#050a19]" aria-labelledby="testimonials-heading">
+  <section id="depoimentos" className="bg-slate-900" aria-labelledby="testimonials-heading">
     <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="mb-12 text-center text-white">
-        <span className="inline-block rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+        <span className="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80">
           Histórias reais
         </span>
         <h2 id="testimonials-heading" className="mt-4 text-3xl font-bold sm:text-4xl">
@@ -39,7 +39,7 @@ const Testimonials = () => (
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {testimonials.map((testimonial) => (
-          <figure key={testimonial.name} className="rounded-3xl border border-white/10 bg-surface/80 p-8 text-left text-slate-100 backdrop-blur">
+          <figure key={testimonial.name} className="rounded-3xl border border-white/10 bg-white/5 p-8 text-left text-slate-100 backdrop-blur">
             <div className="flex items-center gap-4">
               <img
                 src={avatarPlaceholder}
@@ -55,7 +55,7 @@ const Testimonials = () => (
             <blockquote className="mt-4 text-base text-slate-100">
               “{testimonial.quote}”
             </blockquote>
-            <div className="mt-6 flex items-center gap-2 text-sm text-accent" aria-label="Avaliação máxima de 5 estrelas">
+            <div className="mt-6 flex items-center gap-2 text-sm text-yellow-300" aria-label="Avaliação máxima de 5 estrelas">
               <span aria-hidden="true">★★★★★</span>
               <span className="text-slate-200">5.0</span>
             </div>

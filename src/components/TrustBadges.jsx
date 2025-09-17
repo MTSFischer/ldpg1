@@ -31,17 +31,17 @@ const badges = [
 ];
 
 const TrustBadges = () => (
-  <section className="bg-black/95 text-slate-100" aria-labelledby="trust-heading">
+  <section className="bg-white" aria-labelledby="trust-heading">
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="grid gap-6 sm:grid-cols-3">
         {badges.map((badge) => (
-          <div key={badge.title} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-surface/80 p-6">
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+          <div key={badge.title} className="flex items-start gap-4 rounded-2xl border border-slate-100 bg-slate-50/80 p-6">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
               {badge.icon}
             </span>
             <div>
-              <p className="text-sm font-semibold text-white">{badge.title}</p>
-              <p className="text-sm text-slate-300">{badge.description}</p>
+              <p className="text-sm font-semibold text-dark">{badge.title}</p>
+              <p className="text-sm text-slate-600">{badge.description}</p>
             </div>
           </div>
         ))}

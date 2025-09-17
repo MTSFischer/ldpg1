@@ -42,9 +42,6 @@ Todos os textos e valores estão em componentes dentro da pasta [`src/components
 ## 🎨 Personalização de estilos
 
 - As cores principais estão configuradas em [`tailwind.config.js`](./tailwind.config.js).
-  - `dark` e `surface`: tons de preto/azul escuro para a base do layout.
-  - `primary`: verde neon aplicado nos CTAs e botões principais.
-  - `accent`: laranja vibrante usado em badges de urgência e barras promocionais.
 - Tipografia padrão: fonte **Inter**, carregada em [`index.html`](./index.html).
 - Estilos globais adicionais estão em [`src/index.css`](./src/index.css).
 
